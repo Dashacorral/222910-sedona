@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Dasha Corral](https://up.htmlacademy.ru/htmlcss/14/user/222910).
-* Наставник: [Александр Половников](https://htmlacademy.ru/profile/alexpol).
+* Наставник: [Александр Shef Половников](https://htmlacademy.ru/profile/alexpol).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
