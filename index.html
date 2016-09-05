@@ -5,41 +5,43 @@
     <title>SEDONA</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.2.min.js"></script>
+     <script src="js/comportements.js"></script>
   </head>
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <nav class="main-navigation">
+  <body> 
+    <main class="container">
+     <header class="main-header">
+       <!--<div class="logo">
+              <img src="img/logo.png">
+            </div>-->
           <ul>
-            <li>
-              <a href="#">Информация</a>
+            <li class="li">
+              <a href="index.html">accueil</a>
             </li>
-            <li>
-              <a href="#">Фото и видео</a>
+            <li class="li">
+              <a href="#">À propos</a>
             </li>
-            <li>
-              <a href="#"> <img src="img/logo.png"> </a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
+            <li class="logo"><img src="img/logo.png" width="188px" height="30px;"></li>
+             <li class="li">
+              <a href="#">contact</a>
+            
+            <li class="li">
+              <p>+33 (0) 4 80 80 50 35</p>
             </li>
           </ul>
-        </nav>
-    </div>
-    </header>
-    <main class="container">
-	    	<div class="intro">
-	    		<img src="img/logo-intro.png">
+       
+        </header>
+	    	<div id="intro">
+	    		<div id="intro-text"><img src="img/logo-intro.png" ></div>
 	    	</div>
 	    	<div class="about">
-	    		<img src="img/shape.png">
+	    		<div class="triangle1"></div>
 	    		<h1>СЕДОНА — небольшой городок в АРИЗОНЕ,<br> 
 	            заслуживающий большего!</h1>
 	            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-	    	</div>
+	    	
+        </div>
+        <div class="container">
 	    	<div class="col-1">
 	    		<article class="discription-item">
 	    		  <div class="discription-item-text">
@@ -48,8 +50,9 @@
 	    			<p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
 	    		  </div>
 	    		</article>
-	    		<img src="img/photo-1.jpg" width="800" heigt="256">
+	    		<div class="img1"></div>
 	    	</div>
+        </div>
 	     <section class="features">
 	    	<div class="features-item">
 	    		<img src="img/ico-home.png"><br>
@@ -68,7 +71,7 @@
 	    	</div>
 	     </section>
 	       <div class="col-2">
-		    	<img src="img/photo-2.jpg" width="800" heigt="256">
+		    	<div class="img2"></div>
 		    		<article class="discription-item">
 		    		 <div class="discription-item-text">
 		    			<h2>там есть Мост дьявола</h2>
@@ -85,7 +88,7 @@
 		    			<p>ВСЕ достопримечательности <br> находятся очень близко</p>
                     </div>
 		    		</article>	
-		    		<article class="discription-item2">
+		    		<article class="discription-item3">
 		    		 <div class="discription-item-text2">
 		    			<h2>красивая дорога</h2>
 		    			<span>— №4 —</span>
@@ -98,41 +101,115 @@
 		    			<span>— №5 —</span>
 		    			<p>Большинство едет в гранд каньон и <br>толпится там</p>
 		    	     </div>
-		    		</article>	
+		    		</article>
+                    <div class="triangle2"></div>	
 	    	</div>
+
 	    
 	    	<div class="form-titre">
-		    	<h1>заинтересовались?</h1>
-		    	<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+		    	<h1>vous avez des questions?</h1>
+		    	<p>Vous pourriez utiliser notre formulaire de contact pour prendre <br>contact avec nous vite et facilement.</p>
 	    	</div>
-	    	<form action="https://echo.htmlacademy.ru" method="post">
-	    	
 	    	<div class="form-index">
-	    		<div class="form-index-titre"><h3>Форма входа</h3></div>
-                    <label>Дата заезда</label><input type="date" name="date1"><br>
-		            <label>Дата выезда</label> <input type="date" name="date2"><br>
-		            <label>Взрослые</label> 
-		            <div><a href=""><img src="img/-.png"></a></div>
-		            <div><input type="text" name="login" type="number"></div>
-		            <div><a href=""><img src="img/+.png"></a></div>
-		            <label>Дети</label> <input type="text" name="login">
-		            <div><a href=""><img src="img/-.png"></a></div>
-		            <div><input type="text" name="login" type="number"></div>
-		            <div><a href=""><img src="img/+.png"></a></div><br>
-		            <button>Отправить</button>
-		     </div>
+	    	<form action="https://echo.htmlacademy.ru" method="post">
+        
+	    	
+	    	
+	    		<div class="form-index-titre"><h3>contactez nous</h3></div>
+          <div class="form-content">
+                    <div class="line"><label>nom:</label><input type="text" name="name"></div>
+		            <div class="line"><label>Société:</label> <input type="text" name="company"></div><br>
+		            <div class="line"><label>Email*</label> 
+		            <input type="text" name="email"></div>
+		            <div class="line"><label>Téléphone*</label><input type="text" name="phone"></div>
+                <div class="line2"><label>Message*</label><textarea rows="7" cols="74" name="text"></textarea></div>
+		            <button>Envoyer</button>
+                </div>
+		     
             </form>
+            </div>
+        <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
+ 
+<script> 
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(45.94924,5.146178),
+            zoom: 8,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: true,
+            panControl: true,
+            streetViewControl: true,
+            draggable : true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+        }
+        var mapElement = document.getElementById('www');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
 
-        <div id="map"></div>
+        ];
+        for (i = 0; i < locations.length; i++) {
+			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';     }
+
+}
+</script>
+<style>
+    #www {
+        height:550px;
+        width:1200px;
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+</style>
+
+<div id='www'></div>
 
 
 
  <footer class="main-footer">
       <section><b>#VISITSEDONA</b></section>
         <section class="footer-social">
-          <a class="social-btn social-btn-tv" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-ut" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-tv" href="#"><img src="img/t.jpg"></a>
+          <a class="social-btn social-btn-fb" href="#"><img src="img/f.jpg"></a>
+          <a class="social-btn social-btn-ut" href="#"><img src="img/u.jpg"></a>
         </section>
         <section class="footer-CREATED-BY">
         	<p>WEBSITE BY</p>
